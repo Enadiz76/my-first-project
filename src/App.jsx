@@ -11,26 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-
-    <nav>
-      <div class="logo">Company</div>
-  
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dashboard</a></li>
-      </ul>
-            
-    </nav>
-    
-    <section className='section-one'>
-      <div className='section-one'>
-        <h1>This is a header</h1>
-        <p>testing paragraph one</p>
-      </div>
-    </section>
-
-    
+    <>    
       {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
