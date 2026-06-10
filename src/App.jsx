@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import Navbar from './components/Nav/Navbar.jsx'
 
 
 
@@ -10,8 +11,13 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  
+
   return (
-    <>    
+    <>
+     <div className='app-container'>
+      <div className={'landing-page'}></div>
+    </div>
       {/* <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
