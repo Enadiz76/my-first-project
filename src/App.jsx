@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './components/Nav/Navbar.jsx'
+import Dev from './components/Body/Dev.jsx'
 
 
 
@@ -16,7 +17,8 @@ function App() {
   return (
     <>
      <div className='app-container'>
-      <div className={'landing-page'}></div>
+      {/* <div className={'landing-page'}></div> */}
+      <Dev />
     </div>
       {/* <section id="center">
         <div className="hero">
