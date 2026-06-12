@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 
-navbar {
+.navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -24,17 +25,19 @@ navbar {
   font-size: 1.5rem;
   color: #1d4ed8;
   font-weight: bold;
+  cursor: pointer;
 }
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
-.nav-links li a {
+.nav-link {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 .nav-links li a:hover {
   color: #1d4ed8;
