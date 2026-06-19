@@ -1,0 +1,52 @@
+/* .navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-style: dotted;
+} */
+
+/* .navigation-links {
+    margin-left: 20px; 
+    padding: 15px;
+} */
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1920px, 0, 0); /* The image width */
+  }
+}
+
+.container {
+  position: relative; /* Acts as the boundary for overlapping elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-style: dotted; /* Sliding background */
+  overflow: hidden;
+}
+
+.infinite-scrolling { 
+  background: url("https://static.vecteezy.com/system/resources/previews/001/928/973/original/rural-nature-road-scene-free-vector.jpg") repeat-x;
+  height: 645px;
+  width: 5760px;
+  animation: slide 60s linear infinite;
+}
+
+/* .background-element { */
+  /* position: absolute; */
+  /* z-index: -1; /*Pushes the element behind default content */
+  /* top: 50px; */
+  /* left: 50px; */
+/* }  */
+
+/* align-items:flex-end; */
+/* .foreground-element { */
+  /* position: relative;  */
+  /* z-index: 1; /*Higher number brings this element to the front */
+  /* justify-self: right; */
+  /* margin-left: 20px;  */
+  /* padding: 15px; */
+/* }  */

@@ -225,11 +225,11 @@
 }
 
 /* Button row inside each screen */
-.screen-actions {
+/* .screen-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-}
+} */
 
 /* Reset shared button and navbar control styles */
 .screen-actions button,
