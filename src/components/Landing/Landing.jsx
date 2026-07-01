@@ -8,11 +8,6 @@ function Landing({ onNavigate }) {
       <div className="hero-container">
         {/* The moving background element  */}
         <Banner>
-          <main>
-            <div style={{display:'flex', justifyContent: 'center', alignItems:'center'}}>
-              <div>Testing 123</div>
-            </div>
-          </main>
         </Banner>
         
         {/* The static foreground content */}
