@@ -1,38 +1,33 @@
+import React from 'react'
+import { backgroundImages } from '../../assets/images.js'
 import './Banner.css'
 
-/**
- * @typedef {Object} BannerImage
- * @property {string} src
- * @property {string} name
- */
-
-/**
- * @typedef {Object} BannerProps
- * @property {BannerImage[]} images
- */
-
-/**
- * @param {BannerProps} props
- */
-export default function Banner({ images = [] }) {
-    const trackImages = [...images, ...images]
-
+const Banner = ({ children }) => {
     return (
-        <div className="carousel" aria-label="Image banner">
-            <div className="group">
-                {trackImages.map((image, index) => (
-                    <figure className="card" key={`${image.name}-${index}`}>
-                        <img src={image.src} alt={image.name} loading="lazy" />
-                    </figure>
-                ))}
+        <div className="bg-container">
+            <div className="bg-track">
+                {backgroundImages.map((url, index) => (
+                    <div
+                        key={`first-${index}`}
+                        className='bg-slide'
+                        style={{ backgroundImage: `url(${url})` }}
+                    />
+                )) }
+                {backgroundImages.map((url, index) => (
+                    <div
+                        key={`second-${index}`}
+                        className='bg-slide'
+                        style={{ backgroundImage: `url(${url})` }}
+                    />
+                )) }
             </div>
-            <div aria-hidden="true" className="group">
-                {trackImages.map((image, index) => (
-                    <figure className="card" key={`${image.name}-copy-${index}`}>
-                        <img src={image.src} alt="" loading="lazy" />
-                    </figure>
-                ))}
-            </div>
+
+            {/* Dynamic chiuldren to replace the static hard-coded content */}
+                <div className="content">
+                    {children}
+                </div>
         </div>
-    )
-}
+    );
+};
+
+export default Banner;
