@@ -12,9 +12,10 @@ function Landing({ onNavigate }) {
         
         {/* The static foreground content */}
         <div className="foreground-content">
-          <h1>Stunning Foreground</h1>
-          <p>This text stays perfectly still while the background moves behind it.</p>
-          <button>Get Started</button>
+          <button>About me</button>
+          <button>Projects</button>
+          <button>Resume</button>
+          <button>Socials</button>
         </div>
       </div>
     </section>
