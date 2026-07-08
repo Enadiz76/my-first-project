@@ -5,8 +5,10 @@ const Navbar = ({ activeScreen, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(false)
   const navLinks = [
     { name: 'Landing', screen: 'landing' },
+    { name: 'About', screen: 'about' },
     { name: 'Dev', screen: 'dev' },
-    { name: 'Contact', screen: 'contact' },
+    { name: 'Resume', screen: 'resume' },
+    { name: 'Contacts', screen: 'contact' },
   ]
 
   const handleNavigate = (screen) => {

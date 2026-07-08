@@ -6,16 +6,20 @@ function Landing({ onNavigate }) {
   return (
     <section className="screen screen-landing">
       <div className="hero-container">
-        {/* The moving background element  */}
-        <Banner>
-        </Banner>
-        
-        {/* The static foreground content */}
+        <Banner />
         <div className="foreground-content">
-          <button>About me</button>
-          <button>Projects</button>
-          <button>Resume</button>
-          <button>Socials</button>
+          <button type="button" onClick={() => onNavigate('about')}>
+            About
+          </button>
+          <button type="button" onClick={() => onNavigate('dev')} >
+            Dev
+          </button>
+          <button type="button" onClick={() => onNavigate('resume')}>
+            Resume
+          </button>
+          <button type="button" onClick={() => onNavigate('contact')}>
+            Contacts
+          </button>
         </div>
       </div>
     </section>

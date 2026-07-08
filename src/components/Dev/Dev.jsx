@@ -3,26 +3,26 @@ import './Dev.css'
 
 function Dev({ onNavigate }) {
 
-    return (
-            <section className="screen screen-dev">
-                <h1>Test Dev screen</h1>
-
-
-
-                {/* Commented to maybe use later */}
-
-                {/* <p className="screen-eyebrow">Development screen</p>
-                <h1>This is a Dev test</h1>
-                <p className="screen-copy">Use the navbar to jump back to Landing or over to Contact.</p>
-                <div className="screen-actions">
-                    <button type="button" onClick={() => onNavigate('landing')}>
-                        Back to Landing
-                    </button>
-                    <button type="button" onClick={() => onNavigate('contact')}>
-                        Go to Contact
-                    </button>
-                </div> */}
-            </section>
-        )
+  return (
+    <section className="screen screen-dev">
+      <p className="screen-eyebrow">Development</p>
+      <h1>Dev</h1>
+      <p className="screen-copy">This is the development page.</p>
+      <div className="screen-actions">
+        <button type="button" onClick={() => onNavigate('landing')}>
+          Back to Landing
+        </button>
+        <button type="button" onClick={() => onNavigate('about')}>
+          About
+        </button>
+        <button type="button" onClick={() => onNavigate('resume')}>
+          Resume
+        </button>
+        <button type="button" onClick={() => onNavigate('contact')}>
+          Contacts
+        </button>
+      </div>
+    </section>
+  )
 }
 export default Dev
