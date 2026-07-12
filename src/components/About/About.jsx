@@ -5,7 +5,7 @@ function About({ onNavigate }) {
   return (
     <section className="screen screen-about">
       <p className="screen-eyebrow">Get to know</p>
-      <h1 className="screen-copy">About me</h1>
+      <h1 className="">About me</h1>
       <div className="about-container">
         <aside className="about-card">
           <div className="about-card-image" aria-hidden="true">
