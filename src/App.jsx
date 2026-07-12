@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Nav/Navbar.jsx'
 import Landing from './components/Landing/Landing.jsx'
@@ -9,6 +9,22 @@ import Contact from './components/Contact/Contact.jsx'
 
 function App() {
   const [activeScreen, setActiveScreen] = useState('landing')
+  const [isMobileView, setIsMobileView] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+
+    const updateMobileView = () => {
+      setIsMobileView(mediaQuery.matches)
+    }
+
+    updateMobileView()
+    mediaQuery.addEventListener('change', updateMobileView)
+
+    return () => {
+      mediaQuery.removeEventListener('change', updateMobileView)
+    }
+  }, [])
 
   const handleNavigate = (screen) => {
     setActiveScreen(screen)
@@ -24,7 +40,7 @@ function App() {
 
   return (
     <>
-      {activeScreen !== 'landing' && (
+      {(activeScreen !== 'landing' || isMobileView) && (
         <Navbar activeScreen={activeScreen} onNavigate={handleNavigate} />
       )}
       <main className="app-shell">{screens[activeScreen]}</main>

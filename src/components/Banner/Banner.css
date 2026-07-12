@@ -45,3 +45,40 @@
   z-index: 1;
 }
 
+.content > div {
+  width: min(100%, 56rem);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .bg-container,
+  .bg-slide {
+    min-height: 100dvh;
+    height: 100dvh;
+  }
+
+  .bg-track {
+    gap: 0.5rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .content > div {
+    width: min(100%, 32rem);
+  }
+
+  .content > div > div {
+    font-size: 1.2rem !important;
+    line-height: 1.45;
+    padding-inline: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content > div > div {
+    font-size: 1rem !important;
+  }
+}
+
