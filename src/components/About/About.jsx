@@ -42,13 +42,7 @@ function About({ onNavigate }) {
           </p>
         </div>
       </div>
-      <div className="screen-actions">
-        <button type="button" onClick={() => onNavigate('landing')}>
-          Back to Landing
-        </button>
-      </div>
-
-    </section>
+   </section>
   )
 }
 

@@ -128,12 +128,7 @@
   max-width: 56ch;
 }
 
-/* Button row inside each screen */
-/* .screen-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-} */
+
 
 /* Reset shared button and navbar control styles */
 .screen-actions button,

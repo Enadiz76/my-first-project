@@ -1,0 +1,196 @@
+.screen-contact {
+    width: min(100%, 52rem);
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.screen-contact .screen-copy {
+    margin-bottom: 0.5rem;
+}
+
+.screen-copy p {
+    position: relative;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: grid;
+    gap: 0.9rem;
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+.contact-form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    font: inherit;
+    color: var(--text-h);
+    background: var(--bg);
+    box-shadow: var(--shadow);
+}
+
+.contact-form input::placeholder {
+    color: var(--text);
+}
+
+.contact-form input:focus-visible {
+    outline: 3px solid var(--accent-bg);
+    outline-offset: 2px;
+    border-color: var(--accent-border);
+}
+
+.contact-form input[name='message'] {
+    min-height: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.svg-send-btn {
+    justify-self: start;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Optional hover animation */
+.svg-send-btn:hover .send-icon {
+  transform: translate(2px, -2px);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .screen-contact {
+    width: 100%;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .contact-form input {
+    border-radius: 16px;
+    padding: 0.95rem 1rem;
+  }
+
+  .contact-form input[name='message'] {
+    min-height: 11rem;
+  }
+
+  .svg-send-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .screen-contact {
+    padding-inline: 0.85rem;
+  }
+
+  .contact-form {
+    gap: 0.8rem;
+  }
+
+  .contact-form input {
+    font-size: 0.98rem;
+  }
+
+  .contact-form input[name='message'] {
+    min-height: 12rem;
+  }
+}
+
+.screen-footer {
+    margin-top: 0.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.screen-footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.screen-footer-links .fa {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.screen-footer-links .fa:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
+    box-shadow: var(--shadow);
+}
+
+.fa-linkedin {
+    background: #0a66c2;
+    color: #fff;
+}
+
+.fa-github {
+    background: #111111;
+    color: #fff;
+}
+
+.fa-instagram {
+    background: linear-gradient(135deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .screen-footer {
+        padding-top: 1rem;
+    }
+
+    .screen-footer-links {
+        gap: 0.75rem;
+    }
+
+    .screen-footer-links .fa {
+        width: 2.75rem;
+        height: 2.75rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .screen-footer-links .fa {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
+
