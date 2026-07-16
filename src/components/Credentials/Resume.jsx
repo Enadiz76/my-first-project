@@ -23,25 +23,23 @@ function Resume({ onNavigate }) {
       <div className="most-recent-employment">
         <h2>Most Recent Employment</h2>
         <ul>
-          <li>Job Title, Company Name, Duration</li>
-          <li>Job Title, Company Name, Duration</li>
-          <li>Job Title, Company Name, Duration</li>
+          <li>Graduate Intern, Republic Bank, Jan 2026 - Present</li>
+          <li>Intern, TWCU Credit Union, Aug 2024 - Aug 2024</li>
+          <li>Intern, Central Bank of Trinidad and Tobago,  Jun 2023 - Aug 2023</li>
         </ul>
       </div>
 
       <div className="education-and-certs">
         <h2>Education and Certifications</h2>
         <ul>
-          <li>Degree, Institution, Year</li>
-          <li>Degree, Institution, Year</li>
-          <li>Degree, Institution, Year</li>
+          <li>Bachelor of Science in Computer Science, University of the West Indies, 2025</li>
+          <li>Introduction to Data Science Certification, Allison.org, 2025</li>
         </ul>
       </div>
 
       <div className="screen-actions">
         <div className="download-resume-button">
-          <a href="/Zidane Timothy Resume 2026.pdf" download="Desired_FileName.pdf">Download</a>
-
+          <a href="/Zidane Timothy Resume 2026.pdf" download="Zidane_Timothy_Resume_2026.pdf">Download</a>
         </div>
       </div>
 
