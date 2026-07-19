@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './components/Nav/Navbar.jsx'
-import Landing from './components/Landing/Landing.jsx'
-import About from './components/About/About.jsx'
+import Landing from './Pages/Landing/Landing.jsx'
+import About from './Pages/About/About.jsx'
 import Dev from './components/Dev/Dev.jsx'
-import Resume from './components/Credentials/Resume.jsx'
-import Contact from './components/Contact/Contact.jsx'
+import Resume from './Pages/Credentials/Resume.jsx'
+import Contact from './Pages/Contact/Contact.jsx'
 
 function App() {
   const [activeScreen, setActiveScreen] = useState('landing')
