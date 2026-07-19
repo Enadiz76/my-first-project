@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Nav/Navbar.jsx'
 import Landing from './Pages/Landing/Landing.jsx'
 import About from './Pages/About/About.jsx'
-import Dev from './components/Dev/Dev.jsx'
+import Dev from './Pages/Dev/Dev.jsx'
 import Resume from './Pages/Credentials/Resume.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
 
