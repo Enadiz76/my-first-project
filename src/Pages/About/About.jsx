@@ -9,7 +9,6 @@ function About({ onNavigate }) {
       <div className="about-container">
         <aside className="about-card">
           <div className="about-card-image" aria-hidden="true">
-            {/* <span>Image space</span> */}
             <img src="src\assets\LinkedIn.jpg" 
                  alt="Zidane Timothy"
                  height="100"

@@ -4,6 +4,16 @@ import './Contact.css'
 
 function Contact({ onNavigate }) {
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const message = e.target.message.value;
+        console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+        //Here will use fast API to handle a post request to a backend server 
+        // that will send the email to my email address.
+    }
+
     return (
             <section className="screen screen-contact">
                 <p className="screen-eyebrow">Let's Talk</p>
@@ -15,7 +25,7 @@ function Contact({ onNavigate }) {
                     <input type="text" id="name" name="name" required placeholder="Your Name" />
                     <input type="email" id="email" name="email" required placeholder="Your Email" />
                     <input type="text" id="message" name="message" required placeholder="Your Message" />
-                    <button type="submit" className="svg-send-btn">
+                    <button type="submit" className="svg-send-btn" onClick={(e) => {handleSubmit(e)}}>
                         Send Message <span class="material-icons">send</span>
                     </button>
                 </form>
