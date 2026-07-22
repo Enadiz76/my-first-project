@@ -27,8 +27,8 @@ const Banner = ({ children }) => {
             <div className="content">
                 {children}
 
-                <div style={{ fontSize: '2rem', fontWeight: 'bold', fontFamily: 'Arial, sans-serif', color: '#fff' }}>
-                    <span>Hi I am Zidane and I do </span>
+                <div style={{ display: 'flex', flexDirection: 'column', fontSize: '2rem', fontWeight: 'bold', fontFamily: 'Arial, sans-serif', color: '#fff' }}>
+                    <span style={{ marginBottom: '20px' }}>Hi I am Zidane and I do </span>
                     <TypeWriter
                         options={{
                             strings: ['Web Development', 'UI/UX Design', 'Mobile App Development', 'Machine Learning', 'Data Science', 'Embedded Systems (soon to come)'],

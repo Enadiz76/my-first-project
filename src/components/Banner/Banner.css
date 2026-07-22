@@ -44,6 +44,7 @@
   z-index: 1;
 }
 
+
 .content > div {
   width: min(100%, 56rem);
   text-align: center;
