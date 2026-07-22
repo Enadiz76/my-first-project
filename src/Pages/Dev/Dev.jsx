@@ -1,7 +1,7 @@
 import React from 'react'
-import { SiCss, SiHtml5, SiJavascript, SiPython, SiReact } from 'react-icons/si'
 import './Dev.css'
 import Skills from '../../components/Dev/Skills Section/Skills.jsx'
+import ProjectGrid from '../../components/Dev/Project Grid/ProjectGrid.jsx'
 
 function Dev() {
   
@@ -19,18 +19,7 @@ function Dev() {
 
       <section className="dev-section-two">
         <div className="projects">
-          <h2>Projects</h2>
-          <div className="project-list">
-            <div className="bg-track">
-              <div className="card-overlay bg-track">
-                <img src="image.jpg" alt=""></img>
-                <div className="card-overlay__text">
-                  <h3>Overlay Title</h3>
-                  <p>Project preview</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ProjectGrid />
         </div>
       </section>
     </section>

@@ -1,0 +1,44 @@
+.marquee-row {
+  width: 100%;
+}
+
+
+.marquee-window {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+
+.marquee-track {
+  display: flex;
+  width: max-content; 
+  flex-shrink: 0;
+  will-change: transform;
+}
+
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0; 
+}
+
+.animate-marquee {
+  animation: marquee-scroll var(--marquee-speed, 20s) linear infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.marquee-window:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(-1 * var(--marquee-distance, 0px)), 0, 0);
+  }
+}

@@ -12,11 +12,10 @@
   width: max-content;
   height: 100%;
   gap: 1rem;
-  /* Notice the direction change: animation moves left to right */
   animation: scrollBackgroundLeftToRight 20s linear infinite;
 }
 
-/* Reverse the timeline targets */
+
 @keyframes scrollBackgroundLeftToRight {
   0% {
     /* Start offset by half the total track width (one full set of images) */
