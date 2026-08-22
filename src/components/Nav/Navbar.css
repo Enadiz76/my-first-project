@@ -44,9 +44,6 @@
   cursor: pointer;
 }
 
-.nav-links li a:hover {
-  color: #1d4ed8;
-}
 
 .hamburger {
   display: none;
