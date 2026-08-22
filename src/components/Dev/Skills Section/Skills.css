@@ -6,6 +6,7 @@
 .skills-section > h2 {
 	margin: 0;
 	font-size: clamp(1rem, 1.4vw, 1.2rem);
+	padding-bottom: 0.25rem;
 }
 
 .languages-and-tools {
@@ -101,14 +102,6 @@
 	border: 0;
 }
 
-.bubble:hover {
-	transform: scale(1.05) translateY(-3px) !important;
-	filter: saturate(1.05);
-	box-shadow:
-		0 18px 32px rgba(18, 18, 24, 0.18),
-		0 0 0 6px rgba(170, 59, 255, 0.08);
-}
-
 @keyframes floatBubble {
 	0% {
 		transform: translateY(0px);
@@ -157,7 +150,7 @@
 	}
 
 	.bubble {
-		width: 66px;
+		width: min(100%, 72px);
 		font-size: 0.8rem;
 	}
 }
