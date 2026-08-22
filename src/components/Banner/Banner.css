@@ -24,6 +24,14 @@
   background-repeat: no-repeat;
 }
 
+.hero-text {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.3;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
 
 @keyframes scrollBackgroundLeftToRight {
   0% {
@@ -33,6 +41,12 @@
   100% {
     /* End neatly at the absolute beginning of the first track */
     transform: translateX(0%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-track {
+    animation: none;
   }
 }
 
@@ -62,6 +76,7 @@
 
   .bg-track {
     gap: 0.5rem;
+    animation-duration: 30s;
   }
 
   .content {
@@ -72,16 +87,7 @@
     width: min(100%, 32rem);
   }
 
-  .content > div > div {
-    font-size: 1.2rem !important;
-    line-height: 1.45;
-    padding-inline: 0.5rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .content > div > div {
-    font-size: 1rem !important;
-  }
-}
+
 
