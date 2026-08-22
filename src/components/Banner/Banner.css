@@ -16,6 +16,15 @@
 }
 
 
+.bg-slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 @keyframes scrollBackgroundLeftToRight {
   0% {
     /* Start offset by half the total track width (one full set of images) */
@@ -27,13 +36,7 @@
   }
 }
 
-.bg-slide {
-  flex: 0 0 100vw;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 .content {
   display: flex;

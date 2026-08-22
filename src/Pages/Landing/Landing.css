@@ -29,11 +29,8 @@
   font-family: sans-serif;
 }
 
-/* Buttons being used to navigate the site */
-/* Buttons are styled to be visually appealing and interactive, with hover effects and animations.  */
-/* The odd and even buttons have contrasting colors for better visual distinction. */
+/* Buttons being used to navigate the site */  
 .foreground-content button {
-  /* width: max(100%, 28rem); */
   width: clamp(12rem, 35vw, 24rem);
   margin: 2rem ;
   padding: 0.8rem 1.1rem;
