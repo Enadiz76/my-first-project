@@ -48,6 +48,11 @@
   .bg-track {
     animation: none;
   }
+  .bubble,
+  .foreground-content button {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 
