@@ -35,7 +35,13 @@ const Navbar = ({ activeScreen, onNavigate }) => {
             </li>
           ))}
         </ul>
-        <button type="button" className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          type="button"
+          className="hamburger"
+          aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <div className={isOpen ? 'bar rotate-bar1' : 'bar'}></div>
           <div className={isOpen ? 'bar hide-bar2' : 'bar'}></div>
           <div className={isOpen ? 'bar rotate-bar3' : 'bar'}></div>
