@@ -10,43 +10,51 @@ const ProjectGrid = () => {
         title: 'Portfolio Landing',
         preview: 'A responsive personal landing page with animated sections and project highlights.',
         image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80',
+        repo: 'https://github.com/Enadiz76/my-first-project',
       },
-      {
+,      {
         title: 'Task Tracker',
         preview: 'A productivity app for tracking daily tasks, priorities, and completion states.',
         image: 'https://images.unsplash.com/photo-1553028826-f4804a6dba3b?auto=format&fit=crop&w=900&q=80',
+        repo: '',
       },
       {
-        title: 'Weather Dashboard',
-        preview: 'A dashboard that shows forecast, location data, and quick weather summaries.',
-        image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=900&q=80',
+        title: 'Voting Prediction',
+        preview: 'A data-driven web app predicting election outcomes based on historical trends and polling data.',
+        image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80',
+        repo: 'https://github.com/CorporaCorporate/COMP-3610-Project',
       },
       {
-        title: 'Recipe Finder',
-        preview: 'Search and browse recipes with filters, favorites, and ingredient previews.',
-        image: 'https://images.unsplash.com/photo-1496412705862-e0088f16f791?auto=format&fit=crop&w=900&q=80',
+        title: 'Children Speech Corpus',
+        preview: 'A research project collecting and analyzing speech data from children for linguistic studies.',
+        image: 'https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbGRyZW4ncyUyMGNsYXNzfGVufDB8fDB8fHww',
+        repo: ''
       },
     ],
     [
       {
-        title: 'Fitness Coach',
-        preview: 'A lightweight app for workout plans, exercise tracking, and progress snapshots.',
+        title: 'Workout Companion',
+        preview: 'A lightweight web app for workout plans, exercise tracking, and progress snapshots.',
         image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80',
+        repo: '',
       },
       {
-        title: 'Expense Dashboard',
-        preview: 'A finance view with monthly spending trends and category breakdowns.',
+        title: 'e-Plant Shopping',
+        preview: 'An e-commerce platform for buying and selling plants with user reviews and care tips.',
         image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80',
+        repo: 'https://github.com/Enadiz76/e-plantShopping',
       },
       {
-        title: 'Music Library',
-        preview: 'An immersive browsing experience for albums, playlists, and featured tracks.',
-        image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80',
+        title: 'Spotify Clone',
+        preview: 'An ongoing spotify clone project for delivering and streaming music to your device',
+        image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80',
+        repo: '',
       },
       {
-        title: 'Study Notes',
-        preview: 'A clean notes workspace with tagging, search, and quick references.',
-        image: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80',
+        title: 'Staff Allocation System',
+        preview: 'A web application for managing staff allocation, schedules, and project assignments efficiently.',
+        image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80',
+        repo: 'https://github.com/Unable-To-Can/StaffAllocationsA2',
       },
     ],
   ];
@@ -64,6 +72,7 @@ const ProjectGrid = () => {
               image={project.image}
               title={project.title}
               preview={project.preview}
+              repo={project.repo}
               alt={project.title}
             />
           )}
