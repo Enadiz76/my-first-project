@@ -1,0 +1,11 @@
+[project]
+name = "app"
+version = "0.1.0"
+dependencies = [
+ "fastapi",
+ "resend[async]",
+ "email-validator",
+ "pydantic",
+ "python-dotenv>=1.2.3",
+]
+requires-python = "~=3.12.0"
