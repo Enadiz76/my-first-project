@@ -1,0 +1,5 @@
+fastapi
+resend[async]
+email-validator
+pydantic
+python-dotenv
